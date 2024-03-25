@@ -137,7 +137,7 @@ x[:,0],x[0,:],x[0:2,0:2]
 # torch.masked_select(input, mask)
 
 x = torch.randn(2,3)
-mask = torch.ByteTensor([[0,0,1],[0,1,0]])
+mask = torch.BoolTensor([[0,0,1],[0,1,0]])
 out = torch.masked_select(x,mask)
 
 x, mask, out
